@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ajax--CORS</title>
+</head>
+
+<body>
+    <h1>Ajax 练习和跨域</h1>
+
+    <script>
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", 'http://127.0.0.1:8889');
+        xhr.setRequestHeader('X-Header-Name', 'newsOld');
+        xhr.send();
+    </script>
+</body>
+
+</html>

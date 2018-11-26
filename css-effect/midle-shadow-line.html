@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>纺锤形分隔线</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/minireset.css/0.0.2/minireset.min.css" />
+    <style>
+        .line{
+            width: 400px;
+            height: 20px;
+            margin: 120px auto;
+            overflow: hidden;
+        }
+        .line::after{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 25px;
+            margin-top: -25px;
+            box-shadow: 0 0 8px black;
+            border-radius: 125px/12px;
+        }
+        p{
+            width: 400px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <article>
+        <div class="line"></div>
+        <p><em>原理</em>：利用border-radius,把元素切换成椭圆状，在用元素在overflow:hidden，隐藏多余部分，只留下下边阴影</p>
+    </article>
+
+
+</body>
+</html>

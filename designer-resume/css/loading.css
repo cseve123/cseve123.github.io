@@ -1,0 +1,43 @@
+@import '//fonts.googleapis.com/css?family=Cutive';
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #fff;
+    font-family: Arial, sans-serif, PingFangSC, 'Microsoft YaHei';
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+}
+#loading{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    background: #fff;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    font-family: 'Cutive', serif;
+}
+
+@keyframes blink {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.is-typing::after {
+    content: '|';
+    animation: blink 500ms infinite;
+}

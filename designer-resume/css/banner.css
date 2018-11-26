@@ -1,0 +1,194 @@
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    box-sizing: border-box;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(http://cseve123.gz01.bdysite.com/images/micky2.gif);
+    background-position: center center;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+/* @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .banner {
+        background-image: url(http://cseve123.gz01.bdysite.com/images/top2x.png)
+    }
+} */
+
+.banner h1{
+    position: absolute;
+    top: 70px;
+    left: 80px;
+    padding: 0;
+    margin: 0;
+    width: 122px;
+    height: 29px;
+    line-height: 29px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+    border: 1px solid #fff;
+}
+.banner .tel{
+    position: absolute;
+    left: 80px;
+    bottom: 70px;
+}
+.banner .next{
+    position: absolute;
+    bottom: 67px;
+    -webkit-animation: scrollDown2 1.8s infinite;
+    animation: scrollDown2 1.8s infinite;
+    cursor: pointer;
+}
+
+.banner nav{
+    position: absolute;
+    top: 70px;
+    right: 80px;
+    min-width: 25px;
+    min-height: 25px;
+}
+.banner nav ul li{
+    line-height: 18px;
+    position: relative;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.banner nav ul li a{
+    color: #9B9B9B ;
+    text-decoration: none; 
+}
+.banner nav li:before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin: -3px 10px 0;
+    width: 6px;
+    height: 6px;
+    background: #3588FF;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 2px rgba(53,136,255,.5);
+    -webkit-animation: navScale 1.2s infinite;
+    animation: navScale 1.2s infinite;
+}
+.banner nav ul li:hover a{
+    color: #fff;
+}
+.banner nav ul li:hover:before{
+    opacity: 1;
+}
+#nav-toggle + ul{
+    overflow: hidden;
+    padding: 0;
+    margin: 56px 0 0;
+    height: 0;
+    font-size: 15px;
+    color: #9B9B9B;
+    text-align: right;
+    list-style: none;
+    transition: all .4s;
+}
+#nav-toggle.active + ul {
+    height: 150px;
+}
+#nav-toggle {
+    background: transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 16px;
+    width: 25px;
+    cursor: pointer;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 2px;
+    width: 24px;
+    background: white;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: block;
+    content: '';
+}
+
+#nav-toggle span:before {
+    top: -7px;
+}
+
+#nav-toggle span:after {
+    top: 7px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    transition: all 0.6s ease-in-out;
+}
+
+#nav-toggle.active span {
+    background-color: transparent;
+}
+
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+    top: 0;
+}
+
+#nav-toggle.active span:before {
+    transform: rotate(135deg);
+}
+
+#nav-toggle.active span:after {
+    transform: rotate(-135deg);
+}
+
+@keyframes scrollDown2 {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        opacity: 0
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        -webkit-transform: translate(0, 20px);
+        transform: translate(0, 20px);
+        opacity: 0
+    }
+}
+
+@keyframes navScale {
+    0% {
+        box-shadow: 0 0 0 2px rgba(53,136,255,.5);
+    }
+    50% {
+        box-shadow: 0 0 0 4px rgba(53,136,255,.5);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(53,136,255,.5);
+    }
+}

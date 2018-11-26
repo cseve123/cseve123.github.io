@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Mikimin</title>
+
+    <!-- Bootstrap -->
+    <link rel="icon" href="data:;base64,=">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/minireset.css/0.0.2/minireset.css" />
+    <link rel="stylesheet" href="https://cdn.bootcss.com/fullPage.js/2.9.7/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="./css/loading.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
+    <link rel="stylesheet" href="./css/content.css" />
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- loading -->
+    <div id="loading"></div>
+    <!-- loading end -->
+
+    <div id="fullpage">
+        <div class="section" id="section0">
+            <section class="banner">
+                <nav>
+                    <a id="nav-toggle" href="javascript:void(0);">
+                        <span></span>
+                    </a>
+                    <ul>
+                        <li data-menuanchor="secondPage">
+                            <a href="#secondPage">工作/项目经验</a>
+                        </li>
+                        <li data-menuanchor="4thpage">
+                            <a href="#4thpage">作品展示</a>
+
+                        </li>
+                        <li data-menuanchor="6thpage">
+                            <a href="#6thpage">联系我</a>
+                        </li>
+                    </ul>
+                </nav>
+                <h1>MY NAME IS</h1>
+                <img src="http://cseve123.gz01.bdysite.com/images/pick-me.svg" class="tel" alt="tel" />
+                <img src="http://cseve123.gz01.bdysite.com/images/xia.svg" width="22" height="22" alt="next" id="next" class="next" />
+            </section>
+        </div>
+
+        <div class="section">
+            <article>
+                <h2>
+                    <sup>01</sup>
+                    <strong>About</strong>
+                    <br />
+                    <span>自我介绍概述</span>
+                </h2>
+            </article>
+            <div class="info-con">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <div class="info-time">
+                        <img data-src="http://cseve123.gz01.bdysite.com/images/introduce.svg" width="80" alt="introduce" />
+                        <ul class="info-list">
+                            <li>
+                                <h2 name="miki">Miki / 吴敏雯</h2>
+                                <p name="job">UIUX Designer</p>
+                            </li>
+                            <li>
+                                <h2>2011</h2>
+                                <p>上海大学 - 广告设计 Shanghai University</p>
+                                <h2>2011/06 - 2011/12</h2>
+                                <p>实习 - 前程无忧 51job</p>
+                            </li>
+                            <li>
+                                <h2>2012/2 - 2014/12</h2>
+                                <p>广智通传播文化有限公司 Brainet Group</p>
+                                <h3>平面设计</h3>
+                                <p>与团队头脑风暴共同协作,为企业规划规划并设计各类线上、线下视、海报、网页、包装、等视觉传播画面；<br>
+                                    主要执行项目：上海银行/与狼共舞/美国邦基-豆维家/白加黑等...</p>
+                            </li>
+                            <li>
+                                <h2>2015</h2>
+                                <p>云像（上海）数字技术有限公司 Face Touch Digital</p>
+                                <h3>资深视觉设计</h3>
+                                <p>从比稿阶段开始介入喜力项目，收集分析客户需求，定制化设计符合喜力形象的店铺风格，把控设计助理对详情页面及推广图的设计。<br>
+                                    参与多个项目比稿：如oasis，timex等...</p>
+                            </li>
+                            <li>
+                                <h2>2016 - 2018/5</h2>
+                                <p>畅移（上海）信息科技有限公司 Face Touch Digital</p>
+                                <h3>资深UI设计</h3>
+                                <p>基于“企业微信”平台，负责移动OA员圈/官网/企业培训系统等界面交互设计工作；对接产品及研发，管理安排设计师做好产品迭代设计及沟通；
+                                    负责多项目如壳牌/麦德龙/劲霸男装/都市丽人等设计</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section fp-auto-height"> </div>
+
+        <div class="section">
+            <article>
+                <h2 name="works">
+                    <sup>02</sup>
+                    <strong>Design Works</strong>
+                </h2>
+                <ul class="work-list" id="lightbox_1">
+                    <li>
+                        <div style="width: 434px;">
+                            <dl class="hover">
+                                <dt>
+                                    Cartoon illustration
+                                    <strong>Fragmented learning - YQ</strong>
+                                </dt>
+                                <dd>
+                                    <img data-src="http://cseve123.gz01.bdysite.com/images/w1.jpg" alt=""
+                                     class="lightbox-pic"
+                                     data-role="lightbox" 
+                                     data-source="http://cseve123.gz01.bdysite.com/images/w1.jpg" 
+                                     data-group="group-1" 
+                                     data-id="pic_1_1" 
+                                     data-caption="pic_1_1">
+                                </dd>
+                            </dl>
+                            <dl class="hover">
+                                <dt>
+                                    Cartoon illustration
+                                    <strong>Mobile Office - YQ</strong>
+                                </dt>
+                                <dd>
+                                    <img data-src="http://cseve123.gz01.bdysite.com/images/w2.jpg" alt=""
+                                    class="lightbox-pic"
+                                    data-role="lightbox" 
+                                    data-source="http://cseve123.gz01.bdysite.com/images/w2.jpg" 
+                                    data-group="group-1" 
+                                    data-id="pic_1_2" 
+                                    data-caption="pic_1_2">
+                                </dd>
+                            </dl>
+                        </div>
+                        <div style="width:716px;" class="hover">
+                            <img data-src="http://cseve123.gz01.bdysite.com/images/w3.jpg" alt=""
+                            class="lightbox-pic"
+                            data-role="lightbox" 
+                            data-source="http://cseve123.gz01.bdysite.com/images/w3.jpg" 
+                            data-group="group-1" 
+                            data-id="pic_1_3" 
+                            data-caption="pic_1_3">
+                            <h3>
+                                UI
+                                <strong>Collaborative Office - YQ</strong>
+                            </h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="width: 510px;" class="hover">
+                            <img data-src="http://cseve123.gz01.bdysite.com/images/w4.jpg" alt=""
+                                    class="lightbox-pic"
+                                    data-role="lightbox" 
+                                    data-source="http://cseve123.gz01.bdysite.com/images/w4.jpg" 
+                                    data-group="group-1" 
+                                    data-id="pic_1_4" 
+                                    data-caption="pic_1_4" />
+                            <h3>
+                                Cartoon illustration
+                                <strong>Scenery - Practice</strong>
+                            </h3>
+                        </div>
+                        <div style="width: 640px;" class="hover">
+                            <img data-src="http://cseve123.gz01.bdysite.com/images/w5.jpg" alt=""
+                                    class="lightbox-pic"
+                                    data-role="lightbox" 
+                                    data-source="http://cseve123.gz01.bdysite.com/images/w5.jpg" 
+                                    data-group="group-1" 
+                                    data-id="pic_1_5" 
+                                    data-caption="pic_1_5">
+                            <h3>
+                                ICON
+                                <strong>Water Color Brush - Practice</strong>
+                            </h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="width: 757px;" class="hover">
+                            <img data-src="http://cseve123.gz01.bdysite.com/images/w6.jpg" alt=""
+                                    class="lightbox-pic"
+                                    data-role="lightbox" 
+                                    data-source="http://cseve123.gz01.bdysite.com/images/w6.jpg" 
+                                    data-group="group-1" 
+                                    data-id="pic_1_6" 
+                                    data-caption="pic_1_6" />
+                            <h3>
+                                Web
+                                <strong>Home Page - YQ</strong>
+                            </h3>
+                        </div>
+                        <div style="width: 393px;" class="hover">
+                            <img data-src="http://cseve123.gz01.bdysite.com/images/w7.jpg" alt=""
+                                    class="lightbox-pic"
+                                    data-role="lightbox" 
+                                    data-source="http://cseve123.gz01.bdysite.com/images/w7.jpg" 
+                                    data-group="group-1" 
+                                    data-id="pic_1_7" 
+                                    data-caption="pic_1_7">
+                            <h3>
+                                ICON
+                                <strong>Mobile Icon - YQ</strong>
+                            </h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="width: 393px;" class="hover">
+                            <img data-src="http://cseve123.gz01.bdysite.com/images/w8.jpg" alt=""
+                                    class="lightbox-pic"
+                                    data-role="lightbox" 
+                                    data-source="http://cseve123.gz01.bdysite.com/images/w8.jpg" 
+                                    data-group="group-1" 
+                                    data-id="pic_1_8" 
+                                    data-caption="pic_1_8" />
+                            <h3>
+                                UI
+                                <strong>Business Card - JUHAOKE</strong>
+                            </h3>
+                        </div>
+                        <div style="width: 757px;" class="hover">
+                            <img data-src="http://cseve123.gz01.bdysite.com/images/w9.jpg" alt=""
+                                    class="lightbox-pic"
+                                    data-role="lightbox" 
+                                    data-source="http://cseve123.gz01.bdysite.com/images/w9.jpg" 
+                                    data-group="group-1" 
+                                    data-id="pic_1_9" 
+                                    data-caption="pic_1_9">
+                            <h3>
+                                UI
+                                <strong>Business Card - JUHAOKE</strong>
+                            </h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="width: 908px;" class="hover">
+                            <img data-src="http://cseve123.gz01.bdysite.com/images/w10.jpg" alt=""
+                                    class="lightbox-pic"
+                                    data-role="lightbox" 
+                                    data-source="http://cseve123.gz01.bdysite.com/images/w10.jpg" 
+                                    data-group="group-1" 
+                                    data-id="pic_1_10" 
+                                    data-caption="pic_1_10" />
+                            <h3>
+                                C4D
+                                <strong>6IX - Practice</strong>
+                            </h3>
+                        </div>
+                        <div style="width: 242px;">
+                            <dl class="hover">
+                                <dt>
+                                    UI
+                                    <strong>Icon - SHELL</strong>
+                                </dt>
+                                <dd>
+                                    <img data-src="http://cseve123.gz01.bdysite.com/images/w11.jpg" alt=""
+                                    class="lightbox-pic"
+                                    data-role="lightbox" 
+                                    data-source="http://cseve123.gz01.bdysite.com/images/w11.jpg" 
+                                    data-group="group-1" 
+                                    data-id="pic_1_11" 
+                                    data-caption="pic_1_11">
+                                </dd>
+                            </dl>
+                            <dl class="hover">
+                                <dt>
+                                    LOGO
+                                    <strong>HYPERFLOW</strong>
+                                </dt>
+                                <dd>
+                                    <img data-src="http://cseve123.gz01.bdysite.com/images/w12.jpg" alt=""
+                                    class="lightbox-pic"
+                                    data-role="lightbox" 
+                                    data-source="http://cseve123.gz01.bdysite.com/images/w12.jpg" 
+                                    data-group="group-1" 
+                                    data-id="pic_1_12" 
+                                    data-caption="pic_1_12">
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="width: 757px;" class="hover">
+                            <img data-src="http://cseve123.gz01.bdysite.com/images/w13.jpg" alt=""
+                                    class="lightbox-pic"
+                                    data-role="lightbox" 
+                                    data-source="http://cseve123.gz01.bdysite.com/images/w13.jpg" 
+                                    data-group="group-1" 
+                                    data-id="pic_1_13" 
+                                    data-caption="pic_1_13" />
+                            <h3>
+                                UI
+                                <strong>Study - YQ</strong>
+                            </h3>
+                        </div>
+                        <div style="width: 393px;" class="hover">
+                            <img data-src="http://cseve123.gz01.bdysite.com/images/w14.jpg" alt=""
+                                    class="lightbox-pic"
+                                    data-role="lightbox" 
+                                    data-source="http://cseve123.gz01.bdysite.com/images/w14.jpg" 
+                                    data-group="group-1" 
+                                    data-id="pic_1_14" 
+                                    data-caption="pic_1_14">
+                            <h3>
+                                C4D
+                                <strong>ISLAND - Practice</strong>
+                            </h3>
+                        </div>
+                    </li>
+                </ul>
+                
+                <p>
+                    <a href="http://cseve123.gz01.bdysite.com/miki-13918213042.zip" class="work-download">Download More Pictures</a>
+                </p>
+                
+            </article>
+        </div>
+
+        <div class="section fp-auto-height">
+            <footer>
+                <div>
+                    <nav>
+                        <a href="#firstPage" class="top">TOP</a>
+                        <a href="#secondPage" class="about">About Me</a>
+                        <a href="#3rdPage" class="js_works">Design Works</a>
+                    </nav>
+                    <img src="http://cseve123.gz01.bdysite.com/images/micky.png" width="68" height="13" alt="micky" />
+                    <img src="http://cseve123.gz01.bdysite.com/images/tel.svg" alt="tel" />
+                    <span>
+                        <img src="http://cseve123.gz01.bdysite.com/images/code900.gif" alt="weix" />
+                        <img src="http://cseve123.gz01.bdysite.com/images/code.svg" alt="code" />
+                    </span>
+                </div>
+            </footer>
+        </div>
+
+        <div class="section fp-auto-height"> </div>
+    </div>
+
+    <div id="lightbox_mask"></div>
+    <div id="lightbox_popup">
+        <div class="pic-view">
+            <img data-src="" alt="#" class="pic">
+        </div>
+        <div class="btn-view">
+            <a href="javascript:;" class="btn btn-prev">←</a>
+            <a href="javascript:;" class="btn btn-next">→</a>
+            <a href="javascript:;" class="btn btn-close">×</a>
+        </div>
+    </div>
+
+
+    <!-- TODO 去掉库里随机字符的问题？？？ -->
+    <script src="//cdn.jsdelivr.net/npm/theaterjs@latest/dist/theater.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js"></script>
+    <script src="https://cdn.bootcss.com/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+    <script src="./js/lightbox.js"></script>
+
+    <script>
+        // Loading
+        $('#fullpage').hide();
+        var theater = theaterJS();
+        theater.on('type:start, erase:start', function () {
+            var actor = theater.getCurrentActor();
+            actor.$element.classList.add('is-typing');
+        });
+        theater.addActor('loading');
+        theater.addScene('loading: Hello\, My name is', 400)
+            .addScene(600)
+            .addScene(function () {
+                var actor = theater.getCurrentActor();
+                actor.$element.style.display = "none";
+                $('#fullpage').show();
+            });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+            $('#nav-toggle').click(function () {
+                $(this).toggleClass('active')
+            })
+            $('#next').click(function () {
+                $.fn.fullpage.moveSectionDown();
+            })
+
+            $('#fullpage').fullpage({
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage'],
+                autoScrolling: false
+            });
+
+            $('.info-list').find('h3').click(function () {
+                if ($(this).hasClass('active')) {
+                    $(this).removeClass('active');
+                    return false;
+                }
+                $('.info-list').find('h3').removeClass('active');
+                $(this).addClass('active');
+            });
+
+            $('#lightbox_1').lightbox({
+                ifChange: true
+            });
+
+        });
+    </script>
+
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?7bf7db44f89329672187d0f44ab58661";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    
+    
+
+
+</body>
+
+</html>
