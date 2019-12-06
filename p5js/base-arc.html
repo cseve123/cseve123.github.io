@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>圆弧形-arc函数</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+</head>
+<body>
+  <script>
+    function setup() {
+      createCanvas(500, 150);
+      background(200);
+    }
+
+    function draw() {
+      // arc(130,70, 120,60, 0, 3.14);
+      // arc(270,70, 50,80, 1.7,2.6);
+      // arc(350,70, 80,80, 1,5.3);
+      // 角度转弧度
+      arc(130,70, 120,60, 0, radians(45));
+      arc(270,70, 50,80, radians(450), radians(225));
+      arc(350,70, 80,80, radians(-45), radians(180));
+    }
+  </script>
+</body>
+</html>

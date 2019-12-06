@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>矩形-rect函数</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+</head>
+<body>
+  <script>
+    function setup() {
+      createCanvas(500, 150);
+      background(200);
+      // 设置中心
+      rectMode(CENTER);
+    }
+
+    function draw() {
+      rect(70,40, 80,40);
+      rect(230,40, 40,80);
+      rect(350,40, 80,80);
+    }
+  </script>
+</body>
+</html>
