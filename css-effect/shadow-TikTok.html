@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>抖音logo的晃动效果</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #000;
+      color: #fff;
+    }
+    h2 {
+      font-size: 4em;
+      animation: animate 0.5s linear infinite;
+    }
+    @keyframes animate {
+      0%, 100% {
+        text-shadow: -1.5px -1.5px 0 #0ff, 1.5px 1.5px 0 #f00;
+      }
+      25% {
+        text-shadow: 1.5px 1.5px 0 #0ff, -1.5px -1.5px 0 #f00;
+      }
+      50% {
+        text-shadow: 1.5px -1.5px 0 #0ff, 1.5px -1.5px 0 #f00;
+      }
+      75% {
+        text-shadow: -1.5px 1.5px 0 #0ff, -1.5px 1.5px 0 #f00;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>抖音logo效果</h2>
+  <p>原理--利用text-shadow和animation，让text-shadow来左右上下移动</p>
+</body>
+</html>
